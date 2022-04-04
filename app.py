@@ -1,20 +1,11 @@
 
-"""
-Created on Sat Jun  8 17:06:01 2019
-
-@author: prithvi
-"""
 import flask
 from flask import Flask, request , jsonify, render_template
-#import jinja2
 import numpy as np
 import pandas as pd
 import pickle
-
-from flask import Flask, request,jsonify,render_template
-import pickle
-import pandas as pd
-import numpy as np
+import warnings
+warnings.filterwarnings('ignore')
 
 app = Flask(__name__)
 filename = 'Model_GYM.pkl'
