@@ -1,3 +1,9 @@
+
+"""
+Created on Sat Jun  8 17:06:01 2019
+
+@author: prithvi
+"""
 import flask
 from flask import Flask, request , jsonify, render_template
 #import jinja2
@@ -13,7 +19,6 @@ import numpy as np
 app = Flask(__name__)
 filename = 'Model_GYM.pkl'
 model = pickle.load(open(filename, 'rb'))
-
 
 @app.route('/')
 def man():
