@@ -4,6 +4,7 @@ from flask import Flask, request , jsonify, render_template
 import numpy as np
 import pandas as pd
 import pickle
+import requests
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -27,4 +28,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
