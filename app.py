@@ -12,7 +12,7 @@ filename = 'Model_GYM.pkl'
 model = pickle.load(open(filename, 'rb'))
 
 @app.route('/',methods=['GET'])
-def man():
+def main():
     return render_template('home.html')
 
 
@@ -27,4 +27,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
